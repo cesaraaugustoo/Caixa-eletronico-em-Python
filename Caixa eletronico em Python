@@ -1,0 +1,32 @@
+valorSaque = float(input("Qual valor você deseja sacar ?: "))
+if valorSaque >= 10 and valorSaque <= 600:
+  print("Você receberá: ")
+  if valorSaque >= 100:
+   qtdNotas100 = valorSaque // 100
+   valorSaque = valorSaque % 100
+   print(str(qtdNotas100) + " de 100 reais.")
+
+  if valorSaque >= 50:
+    qtdNotas50 = valorSaque // 50
+    valorSaque = valorSaque % 50
+    print(str(qtdNotas50) + " de 50 reais.")
+
+    if valorSaque >= 10:
+      qtdNotas10 = valorSaque // 10
+      valorSaque = valorSaque % 10
+      print(str(qtdNotas10) + " de 10 reais.")
+
+    if valorSaque >= 5:
+      qtdNotas5 = valorSaque // 5
+      valorSaque = valorSaque % 5
+      print(str(qtdNotas5) + " de 5 reais.")
+
+if valorSaque >= 1:
+      qtdNotas1 = valorSaque // 1
+      valorSaque = valorSaque % 1
+      print(str(qtdNotas1) + " de 1 real.")
+
+else:
+  print("Você só pode sacar até 600 reais.")
+    
+    
